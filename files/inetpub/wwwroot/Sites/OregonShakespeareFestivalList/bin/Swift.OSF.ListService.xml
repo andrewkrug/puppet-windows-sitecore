@@ -1,0 +1,275 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Swift.OSF.ListService</name>
+    </assembly>
+    <members>
+        <member name="P:Swift.OSF.ListService.DataContracts.ListInfo.ListId">
+            <summary>
+            The unique identifier for the list. A list may have more than one unique Id, varied by user.
+            </summary>
+        </member>
+        <member name="P:Swift.OSF.ListService.DataContracts.ListInfo.Name">
+            <summary>
+            The name of the list.
+            </summary>
+        </member>
+        <member name="T:Swift.OSF.ListService.DataContracts.Comment">
+            <summary>
+            Represents a single comment that has been attached to a list.
+            </summary>
+        </member>
+        <member name="P:Swift.OSF.ListService.DataContracts.Comment.NickName">
+            <summary>
+            The nickname of the user who left the comment.
+            </summary>
+        </member>
+        <member name="P:Swift.OSF.ListService.DataContracts.Comment.Text">
+            <summary>
+            The text of the comment.
+            </summary>
+        </member>
+        <member name="P:Swift.OSF.ListService.DataContracts.Comment.DateTime">
+            <summary>
+            The date and time that the comment was created.
+            </summary>
+        </member>
+        <member name="T:Swift.OSF.ListService.DataContracts.Invitation">
+            <summary>
+            Represents an invitation to a list.
+            </summary>
+        </member>
+        <member name="P:Swift.OSF.ListService.DataContracts.Invitation.InvitationCode">
+            <summary>
+            The unique identifier for the invitation.
+            </summary>
+        </member>
+        <member name="P:Swift.OSF.ListService.DataContracts.Invitation.Name">
+            <summary>
+            The name of the list used for this invitation.
+            </summary>
+        </member>
+        <member name="P:Swift.OSF.ListService.DataContracts.Invitation.Message">
+            <summary>
+            The message associated with this invitation.
+            </summary>
+        </member>
+        <member name="P:Swift.OSF.ListService.DataContracts.Invitation.Email">
+            <summary>
+            The email of the user who was invited.
+            </summary>
+        </member>
+        <member name="T:Swift.OSF.ListService.DataContracts.Performance">
+            <summary>
+            Information about a performance that was added to a list.
+            </summary>
+        </member>
+        <member name="P:Swift.OSF.ListService.DataContracts.Performance.PerformanceId">
+            <summary>
+            The unique identifier for the performance within the list.
+            </summary>
+        </member>
+        <member name="P:Swift.OSF.ListService.DataContracts.Performance.AddDate">
+            <summary>
+            The date the performance was added to the list.
+            </summary>
+        </member>
+        <member name="P:Swift.OSF.ListService.DataContracts.SessionInfo.UserId">
+            <summary>
+            The user id for this session.
+            </summary>
+        </member>
+        <member name="T:Swift.OSF.ListService.IListService">
+            <summary>
+            The list service exposes cart-list and list management features. Because user security is managed
+            by an external system; lists are attached to users simply by the user's id.
+            </summary>
+        </member>
+        <member name="M:Swift.OSF.ListService.IListService.CreateSessionUser">
+            <summary>
+            For anonymous users, a session-user will be created so they can interact with the list service.
+            </summary>
+            <returns>In addition to the session information, returns a ServiceResponse of SUCCESS or ERROR.</returns>
+        </member>
+        <member name="M:Swift.OSF.ListService.IListService.GetSharedLists(System.String)">
+            <summary>
+            Returns a list of lists that were shared with the user specified.
+            </summary>
+            <param name="UserId">The unique identifier for the user.</param>
+            <returns>In addition to the list of list invitations, returns a ServiceResponse of SUCCESS or ERROR.</returns>
+        </member>
+        <member name="M:Swift.OSF.ListService.IListService.GetOwnedLists(System.String)">
+            <summary>
+            Returns a list of lists owned by the user specified.
+            </summary>
+            <param name="UserId">The unique identifier for the user.</param>
+            <returns>In addition to the list of list names, returns a ServiceResponse of SUCCESS or ERROR.</returns>
+        </member>
+        <member name="M:Swift.OSF.ListService.IListService.AddToList(System.String,System.String,System.String)">
+            <summary>
+            Adds the specified performance to the user's specified list. If the user does not 
+            have a list with the name specified, the list will be created. If the performance
+            is already in the list specified, this method will return successfully.
+            </summary>
+            <param name="UserId">The unique identifier for the user.</param>
+            <param name="ListName">The name of the list that the performance will be added to.</param>
+            <param name="PerformanceId">The unique identifier for the performance being added to the list.</param>
+            <returns>Returns a ServiceResponse. Possible response codes are: SUCCESS and ERROR. In addition to 
+            response code, if successful, this method will also return list information for the list that the 
+            performance was added to.</returns>
+        </member>
+        <member name="M:Swift.OSF.ListService.IListService.RemoveFromList(System.String,System.String,System.String)">
+            <summary>
+            Removes the specified performance from the user's specified list. If the performance
+            does not exist within the list specified, this method will return successfully.
+            </summary>
+            <param name="UserId">The unique identifier for the user.</param>
+            <param name="ListId">The unique identifier of the list that the performance will be removed from.</param>
+            <param name="PerformanceId">The unique identifier for the performance being removed from the list.</param>
+            <returns>Returns a ServiceResponse. Possible response codes are: SUCCESS and ERROR.</returns>
+        </member>
+        <member name="M:Swift.OSF.ListService.IListService.GetPerformances(System.String,System.String)">
+            <summary>
+            Gets the list of performances within the list specified. If the list does not exist, an empty 
+            list of performances will be returned along with a response code of "SUCCESS".
+            </summary>
+            <param name="UserId">The unique identifier for the user.</param>
+            <param name="ListId">The unique identifier of the list from which the performances will be gathered.</param>
+            <returns>Returns a list of performances along with a response code. Possible response codes
+            are SUCCESS and ERROR.</returns>
+        </member>
+        <member name="M:Swift.OSF.ListService.IListService.ShareList(System.String,System.String,System.String,System.String,System.String[],System.String)">
+            <summary>
+            Sends an email to each of the email addresses containing an invitation to the list.
+            </summary>
+            <param name="UserId">The unique identifier for the user.</param>
+            <param name="ListId">The unique identifier of the list that is being shared.</param>
+            <param name="EmailAddresses">An array of email addresses to be invited to the list.</param>
+            <param name="Message">A friendly message to be sent along with the invite.</param>
+            <returns>Returns a response code of either SUCCESS, ERROR or one of the following:
+             - INVALID_EMAIL_FORMAT: This response code indicates that one or more email addresses is not valid. If this response code is returned, the invitation returned will not contain an invitation code.
+             - INVALID_LIST: The list specified does not exist, or is otherwise invalid.
+             - INVALID_LIST_SHARE: The list specified cannot be shared by the user specified.
+             - INVALID_USER_ID: The user specified does not own the list to be shared.</returns>
+        </member>
+        <member name="M:Swift.OSF.ListService.IListService.UnshareList(System.String,System.String,System.String)">
+            <summary>
+            Unshares the list.
+            </summary>
+            <param name="UserId">The unique identifier for the user.</param>
+            <param name="ListId">The unique identifier of the list that is being unshared.</param>
+            <param name="InvitationCode">The ID of the invitation being unshared.</param>
+            <returns>Returns a response code of either SUCCESS, ERROR or one of the following:
+             - INVALID_INVITATION: This response code indicates that the invitation code is not valid or is not associated with the list being unshared.
+             - INVALID_LIST: The list specified does not exist, or is otherwise invalid.
+             - INVALID_USER_ID: The user specified does not own the list to be shared.</returns>
+        </member>
+        <member name="M:Swift.OSF.ListService.IListService.GetShares(System.String,System.String)">
+            <summary>
+            Gets the shares for the list. Can be used to unshare the list.
+            </summary>
+            <param name="UserId">The unique identifier for the user.</param>
+            <param name="ListId">The unique identifier of the list.</param>
+            <returns>In addition to a list of invitation data, returns a response code of either SUCCESS, ERROR or one of the following:
+             - INVALID_LIST: The list specified does not exist, or is otherwise invalid.
+             - INVALID_USER_ID: The user specified does not own the list to be shared.</returns>
+        </member>
+        <member name="M:Swift.OSF.ListService.IListService.AttachList(System.String,System.String,System.String)">
+            <summary>
+            Attaches the shared list to the user specified. To attach the list, the proper invitation code
+            is required. 
+            </summary>
+            <param name="UserId">The unique identifier for the user. If the user is anonymous, this parameter will be empty or null.</param>
+            <param name="EmailAddress">The email address of the user.</param>
+            <param name="InvitationCode">The unique invitation code that links the list and e-mail address.</param>
+            <returns>In addition to list information, returns a response code of either SUCCESS, ERROR or one of the following:
+             - INVALID_EMAIL: The list was not shared with the email address specified.
+             - INVALID_INVITATION_CODE: The invitation code specified either does not exist, or is otherwise invalid for the e-mail address specified.
+             If an error is returned, the list info will not be populated.</returns>
+        </member>
+        <member name="M:Swift.OSF.ListService.IListService.AddComment(System.String,System.String,System.String,System.String)">
+            <summary>
+            Adds a comment to the list.
+            </summary>
+            <param name="UserId">The unique identifier for the user.</param>
+            <param name="ListId">The unique identifier of the list.</param>
+            <param name="NickName">The nickname to be associated with the comment.</param>
+            <param name="Comment">The text of the comment.</param>
+            <returns>Returns a response code of either SUCCESS, ERROR or one of the following:
+             - INVALID_COMMENTER: The user id specified does not own the list and has not been invited to the list.
+             - INVALID_NICKNAME: The nickname specified is empty or null.</returns>
+        </member>
+        <member name="M:Swift.OSF.ListService.IListService.GetComments(System.String,System.String)">
+            <summary>
+            Gets a list containing all comments that have been added to the list.
+            </summary>
+            <param name="UserId">The unique identifier for the user.</param>
+            <param name="ListId">The unique identifier of the list.</param>
+            <returns>Returns a response code of either SUCCESS, ERROR or one of the following:
+             - INVALID_COMMENTER: The user id specified does not own the list and has not been invited to the list.</returns>
+        </member>
+        <member name="M:Swift.OSF.ListService.IListService.AddToCart(System.String,System.String)">
+            <summary>
+            Adds the specified performance to the user's cart list. If the user does not 
+            have a cart list, one will be created. If the performance
+            is already in the cart list specified, this method will return successfully.
+            </summary>
+            <param name="UserId">The unique identifier for the user.</param>
+            <param name="PerformanceId">The unique identifier for the performance being added to the cart list.</param>
+            <returns>Returns a ServiceResponse. Possible response codes are: SUCCESS and ERROR.</returns>
+        </member>
+        <member name="M:Swift.OSF.ListService.IListService.GetCartPerformances(System.String)">
+            <summary>
+            Gets the list of performances within the user's cart. If the cart is empty, an empty 
+            list of performances will be returned along with a response code of "SUCCESS".
+            </summary>
+            <param name="UserId">The unique identifier for the user.</param>
+            <returns>Returns a list of performances along with a response code. Possible response codes
+            are SUCCESS and ERROR.</returns>
+        </member>
+        <member name="M:Swift.OSF.ListService.IListService.RemoveFromCart(System.String,System.String)">
+            <summary>
+            Removes the specified performance from the user's cart list. If the performance
+            does not exist within the cart list, this method will return successfully.
+            </summary>
+            <param name="UserId">The unique identifier for the user.</param>
+            <param name="PerformanceId">The unique identifier for the performance being removed from the cart list.</param>
+            <returns>Returns a ServiceResponse. Possible response codes are: SUCCESS and ERROR.</returns>
+        </member>
+        <member name="M:Swift.OSF.ListService.IListService.EmptyCart(System.String)">
+            <summary>
+            Clears the user's cart. If the cart is already empty, this method will return successfully.
+            </summary>
+            <param name="UserId">The unique identifier for the user.</param>
+            <returns>Returns a ServiceResponse. Possible response codes are: SUCCESS and ERROR.</returns>
+        </member>
+        <member name="M:Swift.OSF.ListService.IListService.MergeUser(System.String,System.String)">
+            <summary>
+            Merges the lists from two different use accounts. 
+            </summary>
+            <param name="OldUserId">The user's old ID</param>
+            <param name="MergeUserId">The user's new merged id.</param>
+            <returns>Returns a ServiceResponse. Possible response codes are: SUCCESS and ERROR.</returns>
+        </member>
+        <member name="P:Swift.OSF.ListService.Shared.ServiceResponse.ResponseCode">
+            <summary>
+            The set of valid response codes is specific to each type of service response. Examples might include: SUCCESS, ERROR
+            </summary>
+        </member>
+        <member name="P:Swift.OSF.ListService.Shared.ServiceResponse.ResponseDetail">
+            <summary>
+            The ResponseDetail is only to be populated when user friendly response information should be passed back.
+            </summary>
+        </member>
+        <member name="P:Swift.OSF.ListService.Shared.ListResponse`1.Items">
+            <summary>
+            A list of items associated with the service response.
+            </summary>
+        </member>
+        <member name="P:Swift.OSF.ListService.Shared.ServiceResponse`1.Item">
+            <summary>
+            A list of items associated with the service response.
+            </summary>
+        </member>
+    </members>
+</doc>

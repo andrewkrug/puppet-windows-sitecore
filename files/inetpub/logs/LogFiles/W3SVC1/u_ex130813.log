@@ -1,0 +1,100 @@
+#Software: Microsoft Internet Information Services 7.5
+#Version: 1.0
+#Date: 2013-08-13 00:48:27
+#Fields: date time s-ip cs-method cs-uri-stem cs-uri-query s-port cs-username c-ip cs(User-Agent) sc-status sc-substatus sc-win32-status time-taken
+2013-08-13 00:48:27 127.0.0.1 GET /sitecore/service/keepalive.aspx - 80 - 127.0.0.1 - 404 0 0 265
+#Software: Microsoft Internet Information Services 7.5
+#Version: 1.0
+#Date: 2013-08-13 01:48:27
+#Fields: date time s-ip cs-method cs-uri-stem cs-uri-query s-port cs-username c-ip cs(User-Agent) sc-status sc-substatus sc-win32-status time-taken
+2013-08-13 01:48:27 127.0.0.1 GET /sitecore/service/keepalive.aspx - 80 - 127.0.0.1 - 404 0 0 249
+#Software: Microsoft Internet Information Services 7.5
+#Version: 1.0
+#Date: 2013-08-13 02:48:28
+#Fields: date time s-ip cs-method cs-uri-stem cs-uri-query s-port cs-username c-ip cs(User-Agent) sc-status sc-substatus sc-win32-status time-taken
+2013-08-13 02:48:28 127.0.0.1 GET /sitecore/service/keepalive.aspx - 80 - 127.0.0.1 - 404 0 0 265
+#Software: Microsoft Internet Information Services 7.5
+#Version: 1.0
+#Date: 2013-08-13 03:48:28
+#Fields: date time s-ip cs-method cs-uri-stem cs-uri-query s-port cs-username c-ip cs(User-Agent) sc-status sc-substatus sc-win32-status time-taken
+2013-08-13 03:48:28 127.0.0.1 GET /sitecore/service/keepalive.aspx - 80 - 127.0.0.1 - 404 0 0 234
+#Software: Microsoft Internet Information Services 7.5
+#Version: 1.0
+#Date: 2013-08-13 04:48:28
+#Fields: date time s-ip cs-method cs-uri-stem cs-uri-query s-port cs-username c-ip cs(User-Agent) sc-status sc-substatus sc-win32-status time-taken
+2013-08-13 04:48:28 127.0.0.1 GET /sitecore/service/keepalive.aspx - 80 - 127.0.0.1 - 404 0 0 249
+#Software: Microsoft Internet Information Services 7.5
+#Version: 1.0
+#Date: 2013-08-13 05:48:29
+#Fields: date time s-ip cs-method cs-uri-stem cs-uri-query s-port cs-username c-ip cs(User-Agent) sc-status sc-substatus sc-win32-status time-taken
+2013-08-13 05:48:29 127.0.0.1 GET /sitecore/service/keepalive.aspx - 80 - 127.0.0.1 - 404 0 0 234
+#Software: Microsoft Internet Information Services 7.5
+#Version: 1.0
+#Date: 2013-08-13 06:48:29
+#Fields: date time s-ip cs-method cs-uri-stem cs-uri-query s-port cs-username c-ip cs(User-Agent) sc-status sc-substatus sc-win32-status time-taken
+2013-08-13 06:48:29 127.0.0.1 GET /sitecore/service/keepalive.aspx - 80 - 127.0.0.1 - 404 0 0 249
+#Software: Microsoft Internet Information Services 7.5
+#Version: 1.0
+#Date: 2013-08-13 07:48:29
+#Fields: date time s-ip cs-method cs-uri-stem cs-uri-query s-port cs-username c-ip cs(User-Agent) sc-status sc-substatus sc-win32-status time-taken
+2013-08-13 07:48:29 127.0.0.1 GET /sitecore/service/keepalive.aspx - 80 - 127.0.0.1 - 404 0 0 234
+#Software: Microsoft Internet Information Services 7.5
+#Version: 1.0
+#Date: 2013-08-13 08:48:29
+#Fields: date time s-ip cs-method cs-uri-stem cs-uri-query s-port cs-username c-ip cs(User-Agent) sc-status sc-substatus sc-win32-status time-taken
+2013-08-13 08:48:29 127.0.0.1 GET /sitecore/service/keepalive.aspx - 80 - 127.0.0.1 - 404 0 0 249
+#Software: Microsoft Internet Information Services 7.5
+#Version: 1.0
+#Date: 2013-08-13 09:48:30
+#Fields: date time s-ip cs-method cs-uri-stem cs-uri-query s-port cs-username c-ip cs(User-Agent) sc-status sc-substatus sc-win32-status time-taken
+2013-08-13 09:48:30 127.0.0.1 GET /sitecore/service/keepalive.aspx - 80 - 127.0.0.1 - 404 0 0 234
+#Software: Microsoft Internet Information Services 7.5
+#Version: 1.0
+#Date: 2013-08-13 10:48:30
+#Fields: date time s-ip cs-method cs-uri-stem cs-uri-query s-port cs-username c-ip cs(User-Agent) sc-status sc-substatus sc-win32-status time-taken
+2013-08-13 10:48:30 127.0.0.1 GET /sitecore/service/keepalive.aspx - 80 - 127.0.0.1 - 404 0 0 249
+#Software: Microsoft Internet Information Services 7.5
+#Version: 1.0
+#Date: 2013-08-13 11:48:30
+#Fields: date time s-ip cs-method cs-uri-stem cs-uri-query s-port cs-username c-ip cs(User-Agent) sc-status sc-substatus sc-win32-status time-taken
+2013-08-13 11:48:30 127.0.0.1 GET /sitecore/service/keepalive.aspx - 80 - 127.0.0.1 - 404 0 0 249
+#Software: Microsoft Internet Information Services 7.5
+#Version: 1.0
+#Date: 2013-08-13 12:48:31
+#Fields: date time s-ip cs-method cs-uri-stem cs-uri-query s-port cs-username c-ip cs(User-Agent) sc-status sc-substatus sc-win32-status time-taken
+2013-08-13 12:48:31 127.0.0.1 GET /sitecore/service/keepalive.aspx - 80 - 127.0.0.1 - 404 0 0 234
+#Software: Microsoft Internet Information Services 7.5
+#Version: 1.0
+#Date: 2013-08-13 13:48:31
+#Fields: date time s-ip cs-method cs-uri-stem cs-uri-query s-port cs-username c-ip cs(User-Agent) sc-status sc-substatus sc-win32-status time-taken
+2013-08-13 13:48:31 127.0.0.1 GET /sitecore/service/keepalive.aspx - 80 - 127.0.0.1 - 404 0 0 249
+#Software: Microsoft Internet Information Services 7.5
+#Version: 1.0
+#Date: 2013-08-13 14:48:31
+#Fields: date time s-ip cs-method cs-uri-stem cs-uri-query s-port cs-username c-ip cs(User-Agent) sc-status sc-substatus sc-win32-status time-taken
+2013-08-13 14:48:31 127.0.0.1 GET /sitecore/service/keepalive.aspx - 80 - 127.0.0.1 - 404 0 0 234
+#Software: Microsoft Internet Information Services 7.5
+#Version: 1.0
+#Date: 2013-08-13 15:48:36
+#Fields: date time s-ip cs-method cs-uri-stem cs-uri-query s-port cs-username c-ip cs(User-Agent) sc-status sc-substatus sc-win32-status time-taken
+2013-08-13 15:48:36 127.0.0.1 GET /sitecore/service/keepalive.aspx - 80 - 127.0.0.1 - 404 0 0 4227
+#Software: Microsoft Internet Information Services 7.5
+#Version: 1.0
+#Date: 2013-08-13 16:48:39
+#Fields: date time s-ip cs-method cs-uri-stem cs-uri-query s-port cs-username c-ip cs(User-Agent) sc-status sc-substatus sc-win32-status time-taken
+2013-08-13 16:48:39 127.0.0.1 GET /sitecore/service/keepalive.aspx - 80 - 127.0.0.1 - 404 0 0 811
+#Software: Microsoft Internet Information Services 7.5
+#Version: 1.0
+#Date: 2013-08-13 17:48:42
+#Fields: date time s-ip cs-method cs-uri-stem cs-uri-query s-port cs-username c-ip cs(User-Agent) sc-status sc-substatus sc-win32-status time-taken
+2013-08-13 17:48:41 127.0.0.1 GET /sitecore/service/keepalive.aspx - 80 - 127.0.0.1 - 404 0 0 374
+#Software: Microsoft Internet Information Services 7.5
+#Version: 1.0
+#Date: 2013-08-13 18:48:49
+#Fields: date time s-ip cs-method cs-uri-stem cs-uri-query s-port cs-username c-ip cs(User-Agent) sc-status sc-substatus sc-win32-status time-taken
+2013-08-13 18:48:49 127.0.0.1 GET /sitecore/service/keepalive.aspx - 80 - 127.0.0.1 - 404 0 0 1700
+#Software: Microsoft Internet Information Services 7.5
+#Version: 1.0
+#Date: 2013-08-13 20:01:54
+#Fields: date time s-ip cs-method cs-uri-stem cs-uri-query s-port cs-username c-ip cs(User-Agent) sc-status sc-substatus sc-win32-status time-taken
+2013-08-13 20:01:54 127.0.0.1 GET /sitecore/service/keepalive.aspx - 80 - 127.0.0.1 - 404 0 0 234

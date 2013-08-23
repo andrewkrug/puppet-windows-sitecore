@@ -1,0 +1,10 @@
+#Software: Microsoft Internet Information Services 7.5
+#Version: 1.0
+#Date: 2013-08-16 19:20:25
+#Fields: date time s-ip cs-method cs-uri-stem cs-uri-query s-port cs-username c-ip cs(User-Agent) sc-status sc-substatus sc-win32-status time-taken
+2013-08-16 19:20:25 10.224.119.103 GET / - 80 - 66.241.68.222 Mozilla/5.0+(Macintosh;+Intel+Mac+OS+X+10_8_4)+AppleWebKit/537.36+(KHTML,+like+Gecko)+Chrome/28.0.1500.95+Safari/537.36 200 0 0 748
+2013-08-16 19:20:25 10.224.119.103 GET /welcome.png - 80 - 66.241.68.222 Mozilla/5.0+(Macintosh;+Intel+Mac+OS+X+10_8_4)+AppleWebKit/537.36+(KHTML,+like+Gecko)+Chrome/28.0.1500.95+Safari/537.36 200 0 0 842
+2013-08-16 19:20:25 10.224.119.103 GET /favicon.ico - 80 - 66.241.68.222 Mozilla/5.0+(Macintosh;+Intel+Mac+OS+X+10_8_4)+AppleWebKit/537.36+(KHTML,+like+Gecko)+Chrome/28.0.1500.95+Safari/537.36 404 0 2 124
+2013-08-16 19:20:30 10.224.119.103 GET /sitecore - 80 - 66.241.68.222 Mozilla/5.0+(Macintosh;+Intel+Mac+OS+X+10_8_4)+AppleWebKit/537.36+(KHTML,+like+Gecko)+Chrome/28.0.1500.95+Safari/537.36 404 0 2 156
+2013-08-16 19:20:30 10.224.119.103 GET /favicon.ico - 80 - 66.241.68.222 Mozilla/5.0+(Macintosh;+Intel+Mac+OS+X+10_8_4)+AppleWebKit/537.36+(KHTML,+like+Gecko)+Chrome/28.0.1500.95+Safari/537.36 404 0 2 93
+2013-08-16 19:20:33 10.224.119.103 GET /favicon.ico - 80 - 66.241.68.222 Mozilla/5.0+(Macintosh;+Intel+Mac+OS+X+10_8_4)+AppleWebKit/537.36+(KHTML,+like+Gecko)+Chrome/28.0.1500.95+Safari/537.36 404 0 2 78

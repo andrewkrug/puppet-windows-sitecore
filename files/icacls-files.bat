@@ -1,0 +1,1 @@
+icacls /T C:\DATA /reset
